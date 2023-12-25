@@ -12,8 +12,8 @@ paths:
       - default
       summary: HIBP-Request
       parameters:
-      - name: email
-        in: path
+      - in: path
+        name: email
         schema:
           type: string
         required: true
