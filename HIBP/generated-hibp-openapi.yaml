@@ -26,8 +26,8 @@ paths:
           description: Not found
           content:
             application/json: {}
-        '403':
-          description: Forbidden
+        '401':
+          description: Unauthorized
           content:
             application/json: {}
 components: {}
