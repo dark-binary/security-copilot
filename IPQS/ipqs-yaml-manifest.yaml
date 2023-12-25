@@ -4,11 +4,7 @@ Descriptor:
   Description: This tool checks the an IP address' location, ISP, reputation etc.
   SupportedAuthTypes:
     - ApiKey
-  Authorization:
-    Type: APIKey
-    Key: apikey
-    Location: Path
-    AuthScheme: ''
+
 SkillGroups:
   - Format: API
     Settings:
