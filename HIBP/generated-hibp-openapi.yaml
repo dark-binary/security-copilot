@@ -6,13 +6,13 @@ servers:
 - url: https://haveibeenpwned.com
 basePath: /api/v3
 paths:
-  /breachedaccount/{account}:
+  /breachedaccount/{email}:
     get:
       tags:
       - default
       summary: HIBP-Request
       parameters:
-      - name: account
+      - name: email
         in: path
         schema:
           type: string
