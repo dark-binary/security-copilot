@@ -1,0 +1,41 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "HIBP-Collection",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://haveibeenpwned.com"
+    }
+  ],
+  "paths": {
+    "/api/v3/breachedaccount/<Email>": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "HIBP-APIKey-Header",
+        "parameters": [
+          {
+            "name": "hibp-api-key",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            },
+            "example": "<APIKey>"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}
