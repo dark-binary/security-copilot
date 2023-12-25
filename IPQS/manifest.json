@@ -5,12 +5,17 @@
     "description_for_human": "This tool checks the an IP address' location, ISP, reputation etc.",
     "description_for_model": "This tool checks the an IP address' location, ISP, reputation etc.",
     "auth": {
-        "type": "none"
+        "type": "service_http",
+        "instructions": "",
+        "authorization_type": "bearer",
+        "verification_tokens": {
+          "openai": "f9cd21497220486789fa94c7a129a040"
+        },
+        "custom_auth_header": null
     },
     "api": {
         "type": "openapi",
-        "url": "https://raw.githubusercontent.com/dark-binary/security-copilot/main/IPQS/ipqs-openapi.yaml",
-        "is_user_authenticated": false
+        "url": "https://raw.githubusercontent.com/IPQualityScore/OpenAPI/main/openapi.yaml"
     },
     "logo_url": "https://www.ipqualityscore.com/templates/images/logo/ip_quality_score_logo_black.png",
     "contact_email": "debac.manikandan@defend.co.nz",
