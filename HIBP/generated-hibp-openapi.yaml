@@ -17,7 +17,6 @@ paths:
         schema:
           type: string
         required: true
-        default: 'go2mdebac@gmail.com'
       responses:
         '200':
           description: Successful response
