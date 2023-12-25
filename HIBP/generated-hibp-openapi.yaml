@@ -4,8 +4,9 @@ info:
   version: 1.0.0
 servers:
 - url: https://haveibeenpwned.com
+basePath: /api/v3
 paths:
-  "/api/v3/breachedaccount/{account}":
+  "/breachedaccount/{account}":
     get:
       tags:
       - default
@@ -19,6 +20,14 @@ paths:
       responses:
         '200':
           description: Successful response
+          content:
+            application/json: {}
+        '404':
+          description: Not found
+          content:
+            application/json: {}
+        '403':
+          description: Forbidden
           content:
             application/json: {}
 components: {}
