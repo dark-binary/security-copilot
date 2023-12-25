@@ -1,5 +1,12 @@
 ---
 openapi: 3.0.0
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      in: path
+      name: apikey
+      type: apiKey
+host: ipqualityscore.com
 info:
   title: IPQS-Collection
   version: 1.0.0
@@ -12,31 +19,39 @@ paths:
       - default
       summary: IPQS-Request
       parameters:
+      - name: apikey
+        in: path
+        schema:
+          type: string
+      - name: ipaddress
+        in: path
+        schema:
+          type: string
       - name: strictness
         in: query
         schema:
           type: integer
-        example: '0'
+        default: '0'
       - name: allow_public_access_points
         in: query
         schema:
           type: boolean
-        example: 'true'
+        default: 'true'
       - name: fast
         in: query
         schema:
           type: boolean
-        example: 'true'
+        default: 'true'
       - name: lighter_penalties
         in: query
         schema:
           type: boolean
-        example: 'true'
+        default: 'true'
       - name: mobile
         in: query
         schema:
           type: boolean
-        example: 'true'
+        default: 'true'
       responses:
         '200':
           description: Successful response
