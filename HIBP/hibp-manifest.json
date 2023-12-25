@@ -1,0 +1,23 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "HIBP",
+    "name_for_model": "HIBP",
+    "description_for_human": "This tool checks if an email address has been found in any of the data breaches.",
+    "description_for_model": "This tool checks if an email address has been found in any of the data breaches.",
+    "auth": {
+        "type": "service_http",
+        "instructions": "",
+        "authorization_type": "bearer",
+        "verification_tokens": {
+          "openai": "f9cd21497220486789fa94c7a129a040"
+        },
+        "custom_auth_header": null
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://raw.githubusercontent.com/Shuffle/openapi-apps/master/have_i_been_pwned.yaml"
+    },
+    "logo_url": "https://blog.nottinghamnerds.com/content/images/size/w2000/2021/07/HIBP-logo.png",
+    "contact_email": "debac.manikandan@defend.co.nz",
+    "legal_info_url": "https://haveibeenpwned.com/TermsOfUse"
+}
