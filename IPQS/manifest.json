@@ -9,7 +9,7 @@
     },
     "api": {
         "type": "openapi",
-        "url": "https://raw.githubusercontent.com/IPQualityScore/OpenAPI/main/openapi.yaml",
+        "url": "https://raw.githubusercontent.com/dark-binary/security-copilot/main/IPQS/ipqs-openapi.yaml",
         "is_user_authenticated": false
     },
     "logo_url": "https://www.ipqualityscore.com/templates/images/logo/ip_quality_score_logo_black.png",
