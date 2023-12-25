@@ -11,6 +11,12 @@ paths:
       tags:
       - default
       summary: HIBP-Request
+      parameters:
+      - name: account
+        in: path
+        schema:
+          type: string
+        required: true
       responses:
         '200':
           description: Successful response
