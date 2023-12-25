@@ -1,0 +1,75 @@
+# Copyright IPQualityScore LLC 2023
+openapi: "3.0.3"
+info:
+  title: IPQualityScore API
+  termsOfService: https://www.ipqualityscore.com/terms-of-service
+  contact:
+    name: API Support
+    url: https://www.ipqualityscore.com/documentation/overview
+    email: support@ipqualityscore.com
+  license:
+    name: MIT
+    url: https://opensource.org/license/mit/
+  # Copyright IPQualityScore LLC 2023
+  version: 0.1.0 # last updated: 2023-03-23
+paths:
+  # IP
+  /{format}/ip/{key}/{ip}:
+    $ref: "./paths/ip/{format}_ip_{key}_{ip}.yaml"
+components:
+  schemas:
+    postBodySchema:
+      type: object
+      properties:
+        key:
+          type: string
+        ip:
+          type: string
+        strictness:
+          $ref: "./components/schemas/_index.yaml#/Strictness"
+        user_agent:
+          type: string
+        user_language:
+          type: string
+        fast:
+          type: boolean
+        mobile:
+          type: boolean
+        allow_public_access_points:
+          type: boolean
+        lighter_penalties:
+          type: boolean
+        transaction_strictness:
+          $ref: "./components/schemas/_index.yaml#/TransactionStrictness"
+      # Custom tracking variables (such as "userID", "transactionID") established in your account
+      # settings can be passed with each API request. This allows our reporting tools to filter by
+      # specific users, products, campaigns, transactions, etc. so that you can easily match up
+      # records with your own system to identify fraudulent activity.
+      additionalProperties: true
+  requestBodies:
+    Body:
+      description: >
+        Instead of including parameters in the query of a GET request, they can
+        be included in the body of a POST request
+      required: true
+      content:
+        application/x-www-form-urlencoded:
+          schema:
+            $ref: "#/components/schemas/postBodySchema"
+  responses:
+    $ref: "./components/responses/OK.yaml"
+  securitySchemes:
+    apiKeyHeader:
+      type: apiKey
+      in: header
+      name: IPQS-KEY
+    apiKeyQuery:
+      type: apiKey
+      in: query
+      name: key
+servers:
+  - url: https://ipqualityscore.com/api
+security:
+  # API key can be in header OR query parameter
+  - apiKeyHeader: []
+  - apiKeyQuery: []
