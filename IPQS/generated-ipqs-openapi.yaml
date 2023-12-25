@@ -6,7 +6,7 @@ info:
 servers:
 - url: https://ipqualityscore.com
 paths:
-  "/api/json/ip/W0ehFd0KO8tC4FpsEEw7ZnOsbj1PB6mN/{ipaddress}":
+  "/api/json/ip/{apikey}/{ipaddress}":
     get:
       tags:
       - default
