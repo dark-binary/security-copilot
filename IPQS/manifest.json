@@ -5,7 +5,8 @@
     "description_for_human": "This tool checks the an IP address' location, ISP, reputation etc.",
     "description_for_model": "This tool checks the an IP address' location, ISP, reputation etc.",
     "auth": {
-        "type": "ApiKey"
+        "type": "service_http",
+        "authorization_type": "basic"
     },
     "api": {
         "type": "openapi",
