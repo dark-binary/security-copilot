@@ -6,8 +6,8 @@ Descriptor:
     - ApiKey
   Authorization:
     Type: APIKey
-    Key: key
-    Location: QueryParams
+    Key: IPQS-KEY
+    Location: Header
     AuthScheme: ''
 
 SkillGroups:
