@@ -6,4 +6,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://raw.githubusercontent.com/IPQualityScore/OpenAPI/main/openapi.yaml
+      OpenApiSpecUrl: https://raw.githubusercontent.com/dark-binary/security-copilot/main/IPQS/generated-ipqs-openapi.yaml
