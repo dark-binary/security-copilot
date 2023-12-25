@@ -8,4 +8,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://raw.githubusercontent.com/dark-binary/security-copilot/6aa01f111ab95e6533ebf899a7dc6bbdc1337b00/IPQS/generated-ipqs-openapi.yaml
+      OpenApiSpecUrl: https://raw.githubusercontent.com/dark-binary/security-copilot/main/IPQS/generated-ipqs-openapi.yaml
