@@ -1,0 +1,9 @@
+Descriptor:
+  Name: IPQS
+  DisplayName: IP Qulaity Score
+  Description: This tool checks the an IP address' location, ISP, reputation etc.
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl: https://raw.githubusercontent.com/IPQualityScore/OpenAPI/main/openapi.yaml
