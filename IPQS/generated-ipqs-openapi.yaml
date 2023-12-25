@@ -7,13 +7,13 @@ info:
 servers:
 - url: https://ipqualityscore.com
 paths:
-  "/api/json/ip/{apikey}/{ipaddress}":
+  "/api/json/ip/{key}/{ipaddress}":
     get:
       tags:
       - default
       summary: IPQS-Request
       parameters:
-      - name: apikey
+      - name: key
         in: path
         schema:
           type: string
