@@ -5,13 +5,7 @@
     "description_for_human": "This tool checks if an email address has been found in any of the data breaches in HaveIBeenPwned.",
     "description_for_model": "This tool checks if an email address has been found in any of the data breaches in HaveIBeenPwned.",
     "auth": {
-        "type": "service_http",
-        "instructions": "",
-        "authorization_type": "bearer",
-        "verification_tokens": {
-          "openai": "f9cd21497220486789fa94c7a129a040"
-        },
-        "custom_auth_header": null
+        "type": "none"
     },
     "api": {
         "type": "openapi",
