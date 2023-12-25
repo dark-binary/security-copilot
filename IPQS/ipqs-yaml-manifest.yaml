@@ -3,7 +3,7 @@ Descriptor:
   DisplayName: IP Quality Score
   Description: This tool checks the an IP address' location, ISP, reputation etc.
   SupportedAuthTypes:
-    - ApiKey
+    - Basic
 
 SkillGroups:
   - Format: API
