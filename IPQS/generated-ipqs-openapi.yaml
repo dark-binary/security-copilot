@@ -1,11 +1,4 @@
 openapi: 3.0.0
-components:
-  securitySchemes:
-    ApiKeyAuth:
-      in: header
-      name: IPQS-KEY
-      type: apiKey
-host: ipqualityscore.com
 info:
   title: IPQS-Collection
   version: 1.0.0
