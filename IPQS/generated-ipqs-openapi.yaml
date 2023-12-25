@@ -17,10 +17,12 @@ paths:
         in: path
         schema:
           type: string
+        required: true
       - name: ipaddress
         in: path
         schema:
           type: string
+        required: true
       - name: strictness
         in: query
         schema:
