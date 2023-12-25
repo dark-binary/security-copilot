@@ -6,7 +6,7 @@
     "description_for_model": "This tool checks the an IP address' location, ISP, reputation etc.",
     "auth": {
         "type": "service_http",
-        "authorization_type": "basic"
+        "authorization_type": "bearer"
     },
     "api": {
         "type": "openapi",
