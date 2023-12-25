@@ -2,7 +2,13 @@ Descriptor:
   Name: IPQS
   DisplayName: IP Qulaity Score
   Description: This tool checks the an IP address' location, ISP, reputation etc.
-
+  SupportedAuthTypes:
+    - ApiKey
+  Authorization:
+    Type: APIKey
+    Key: apikey
+    Location: Path
+    AuthScheme: ''
 SkillGroups:
   - Format: API
     Settings:
