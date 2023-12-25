@@ -1,0 +1,18 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "IPQS",
+    "name_for_model": "IPQS",
+    "description_for_human": "This tool checks the an IP address' location, ISP, reputation etc.",
+    "description_for_model": "This tool checks the an IP address' location, ISP, reputation etc.",
+    "auth": {
+        "type": "ApiKey"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://raw.githubusercontent.com/IPQualityScore/OpenAPI/main/openapi.yaml",
+        "is_user_authenticated": false
+    },
+    "logo_url": "https://www.ipqualityscore.com/templates/images/logo/ip_quality_score_logo_black.png",
+    "contact_email": "debac.manikandan@defend.co.nz",
+    "legal_info_url": "https://www.ipqualityscore.com/terms-of-service"
+}
