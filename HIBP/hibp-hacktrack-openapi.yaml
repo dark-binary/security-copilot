@@ -34,7 +34,7 @@ paths:
 components:
   schemas:
     getTrackResponse:
-      type: object
+      type: json
       properties:
         todos:
           type: array
