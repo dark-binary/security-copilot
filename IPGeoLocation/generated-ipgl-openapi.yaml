@@ -9,19 +9,17 @@ paths:
     get:
       tags:
       - default
-      summary: IPGL-Request
+      summary: This path checks the an IP address' location and ISP.
       parameters:
       - name: apiKey
         in: query
         schema:
           type: string
-        example: test123
         required: true
       - name: ip
         in: query
         schema:
           type: string
-        example: 8.8.8.8
         required: true
       responses:
         '200':
