@@ -4,8 +4,14 @@ info:
   version: 1.0.0
 servers:
 - url: https://haveibeenpwned.com
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      in: header
+      name: hibp-api-key
+      type: apiKey
 paths:
-  "/api/v3/breachedaccount/"{email}:
+  /api/v3/breachedaccount/{email}:
     get:
       tags:
       - default
