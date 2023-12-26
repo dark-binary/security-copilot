@@ -18,6 +18,7 @@ paths:
       responses:
         default:
           description: default
-          schema: {}
+          content:
+            application/json: {}
       summary: Get list of breaches for an account
 components: {}
