@@ -9,7 +9,6 @@ paths:
     get:
       tags:
       - default
-      summary: HIBP-Request
       parameters:
       - in: path
         name: email
