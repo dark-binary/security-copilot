@@ -20,5 +20,5 @@ paths:
         default:
           description: default
           schema: {}
-      summary: Get all breaches for an account
+      summary: Get list of breaches for an account
 components: {}
