@@ -1,0 +1,11 @@
+Descriptor:
+  Name: HackTrack
+  DisplayName: HackTrack
+  Description: This tool checks if credentials linked to an email have been exposed in data breaches or hacks.
+  SupportedAuthTypes:
+    - None
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl: https://hacktrack.routum.io/openapi.yaml
