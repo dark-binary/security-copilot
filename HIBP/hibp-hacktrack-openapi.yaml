@@ -24,6 +24,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/getTrackResponse'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getTrackResponse'
 
 components:
   schemas:
