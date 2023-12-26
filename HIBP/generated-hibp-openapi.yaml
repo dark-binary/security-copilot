@@ -17,21 +17,9 @@ paths:
           type: string
         required: true
       responses:
-        '200':
-          description: Successful response
-          content:
-            application/json: {}
-        '404':
-          description: Not found
-          content:
-            application/json: {}
-        '401':
-          description: Unauthorized
-          content:
-            application/json: {}
+        responses:
         default:
-          description: Unexpected error
+          description: default
           schema: {}
-          content:
-            application/json: {}
+      summary: Get all breaches for an account
 components: {}
