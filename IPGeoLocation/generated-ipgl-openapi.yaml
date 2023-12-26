@@ -5,7 +5,7 @@ info:
 servers:
 - url: https://api.ipgeolocation.io
 paths:
-  "/ipgeo":
+  "/ipgeo/":
     get:
       tags:
       - default
