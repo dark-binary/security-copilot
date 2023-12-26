@@ -29,4 +29,8 @@ paths:
           description: Unauthorized
           content:
             application/json: {}
+        default:
+          description: Unexpected error
+          content:
+            application/json: {}
 components: {}
