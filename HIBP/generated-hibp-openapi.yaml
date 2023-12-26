@@ -31,6 +31,7 @@ paths:
             application/json: {}
         default:
           description: Unexpected error
+          schema: {}
           content:
             application/json: {}
 components: {}
