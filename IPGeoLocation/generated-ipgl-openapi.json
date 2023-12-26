@@ -1,0 +1,49 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "IPGeoLocation-Collection",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api.ipgeolocation.io"
+    }
+  ],
+  "paths": {
+    "/ipgeo": {
+      "get": {
+        "tags": [
+          "default"
+        ],
+        "summary": "IPGL-Request",
+        "parameters": [
+          {
+            "name": "apiKey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "test123"
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "example": "8.8.8.8"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}
