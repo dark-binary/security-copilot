@@ -1,0 +1,37 @@
+openapi: 3.0.1
+info:
+  title: HaveIBeenPwned
+  description: This tool checks if an email address has been found in any of the data breaches in HaveIBeenPwned.
+  version: 'v1'
+servers:
+  - url: https://haveibeenpwned.com
+paths:
+  /api/v3/breachedaccount/{email}:
+    get:
+      operationId: getBreaches
+      summary: Account to be checked against the HaveIBeenPwned API
+      parameters:
+      - in: path
+        name: email
+        schema:
+            type: string
+        required: true
+        description: The email of the user.
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getTrackResponse'
+
+components:
+  schemas:
+    getTrackResponse:
+      type: object
+      properties:
+        todos:
+          type: array
+          items:
+            type: string
+          description: The list of breaches and leaks.
