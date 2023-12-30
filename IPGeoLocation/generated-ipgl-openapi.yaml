@@ -11,11 +11,6 @@ paths:
       - default
       summary: This path checks the an IP address' location and ISP.
       parameters:
-      - name: apiKey
-        in: query
-        schema:
-          type: string
-        required: true
       - name: ip
         in: query
         schema:
