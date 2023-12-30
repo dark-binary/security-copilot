@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: PipeDreamTest-HIBP
+  version: 1.0.0
+servers:
+- url: https://eobo1ufqdmmqq5b.m.pipedream.net
+paths:
+  /api/v3/breachedaccount/{email}:
+    get:
+      tags:
+      - default
+      parameters:
+      - in: path
+        name: email
+        schema:
+          type: string
+        required: true
+      responses:
+        default:
+          description: default
+          schema: {}
+      summary: Get list of breaches for an account
+components: {}
