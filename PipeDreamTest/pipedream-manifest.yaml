@@ -1,0 +1,16 @@
+Descriptor:
+  Name: IP Safe or Malicious
+  DisplayName: IP Safe or Malicious
+  Description: This tool checks if an IP address is safe or malicious.
+  SupportedAuthTypes:
+    - ApiKey
+  Authorization:
+    Type: APIKey
+    Key: apiKey
+    Location: QueryParams
+    AuthScheme: ''
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl: https://raw.githubusercontent.com/dark-binary/security-copilot/PipeDreamTest/generated-pipedream-openapi.yaml

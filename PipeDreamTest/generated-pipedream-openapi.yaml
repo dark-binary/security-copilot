@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: PipeDreamTest
+  version: 1.0.0
+servers:
+- url: https://eozi0hp1qh0xur.m.pipedream.net
+paths:
+  "/ipcheck/":
+    get:
+      tags:
+      - default
+      summary: This tool checks if an IP address is safe or malicious.
+      parameters:
+      - name: apiKey
+        in: query
+        schema:
+          type: string
+        required: true
+      - name: ip
+        in: query
+        schema:
+          type: string
+        required: true
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+components: {}
