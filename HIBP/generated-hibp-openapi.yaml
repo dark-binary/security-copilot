@@ -15,6 +15,7 @@ paths:
         schema:
           type: string
         required: true
+        description: The email of the user.
       responses:
         default:
           description: default
