@@ -11,11 +11,6 @@ paths:
       - default
       summary: This tool checks if an IP address is safe or malicious.
       parameters:
-      - name: apiKey
-        in: query
-        schema:
-          type: string
-        required: true
       - name: ip
         in: query
         schema:
