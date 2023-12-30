@@ -6,7 +6,7 @@ servers:
 - url: https://haveibeenpwned.com
 basePath: /api/v3
 paths:
-  breachedaccount/{email}:
+  /breachedaccount/{email}:
     get:
       tags:
       - default
