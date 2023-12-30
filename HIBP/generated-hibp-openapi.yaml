@@ -3,9 +3,9 @@ info:
   title: HIBP-Collection
   version: 1.0.0
 servers:
-- url: https://haveibeenpwned.com/api/v3
+- url: https://haveibeenpwned.com
 paths:
-  /breachedaccount/{email}:
+  /api/v3/breachedaccount/{email}:
     get:
       tags:
       - default
