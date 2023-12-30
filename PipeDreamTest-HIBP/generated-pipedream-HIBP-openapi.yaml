@@ -3,8 +3,7 @@ info:
   title: PipeDreamTest-HIBP
   version: 1.0.0
 servers:
-- url: https://eobo1ufqdmmqq5b.m.pipedream.net
-basePath: /api/v3
+- url: https://eobo1ufqdmmqq5b.m.pipedream.net/api/v3
 paths:
   /breachedaccount/{email}:
     get:
