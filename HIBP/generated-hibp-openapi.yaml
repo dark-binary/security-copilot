@@ -2,6 +2,8 @@ openapi: 3.0.0
 info:
   title: HIBP-Collection
   version: 1.0.0
+basePath: /api/v3
+host: haveibeenpwned.com
 servers:
 - url: https://haveibeenpwned.com/api/v3
 paths:
