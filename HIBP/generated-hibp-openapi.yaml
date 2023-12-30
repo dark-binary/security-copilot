@@ -19,8 +19,26 @@ paths:
         required: true
         description: The email of the user.
       responses:
-        default:
-          description: default
+        '200':
+          description: Successful response
+          schema: {}
+        '400':
+          description: Bad request
+          schema: {}
+        '401':
+          description: Unauthorized
+          schema: {}
+        '403':
+          description: Forbidden
+          schema: {}
+        '404':
+          description: Not found
+          schema: {}
+        '429':
+          description: Too many requests
+          schema: {}
+        '503':
+          description: Service unavailable
           schema: {}
       summary: Get list of breaches for an account
 components: {}
