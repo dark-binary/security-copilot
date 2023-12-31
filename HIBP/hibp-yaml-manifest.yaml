@@ -2,13 +2,6 @@ Descriptor:
   Name: HaveIBeenPwned
   DisplayName: HaveIBeenPwned
   Description: This tool checks if an email address has been found in any of the data breaches in HaveIBeenPwned.
-  SupportedAuthTypes:
-    - ApiKey
-  Authorization:
-    Type: APIKey
-    Key: hibp-api-key
-    Location: Header
-    AuthScheme: ''
 
 SkillGroups:
   - Format: API
