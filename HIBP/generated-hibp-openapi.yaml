@@ -21,25 +21,36 @@ paths:
       responses:
         '200':
           description: Successful response
-          schema: {}
+          content:
+            application/json: {}
         '400':
           description: Bad request
-          schema: {}
+          content:
+            application/json: {}
         '401':
           description: Unauthorized
-          schema: {}
+          content:
+            application/json: {}
         '403':
           description: Forbidden
-          schema: {}
+          content:
+            application/json: {}
         '404':
           description: Not found
-          schema: {}
+          content:
+            application/json: {}
         '429':
           description: Too many requests
-          schema: {}
+          content:
+            application/json: {}
         '503':
           description: Service unavailable
-          schema: {}
+          content:
+            application/json: {}
+        default:
+          description: Unexpected error
+          content:
+            application/json: {}
       summary: Get list of breaches for an account
 components: {}
 schemes:
