@@ -4,8 +4,6 @@ info:
   version: 1.0.0
 basePath: /api/v3
 host: haveibeenpwned.com
-servers:
-- url: https://haveibeenpwned.com/api/v3
 paths:
   /breachedaccount/{email}:
     get:
