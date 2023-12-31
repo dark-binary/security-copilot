@@ -42,3 +42,5 @@ paths:
           schema: {}
       summary: Get list of breaches for an account
 components: {}
+schemes:
+- 'https:'
