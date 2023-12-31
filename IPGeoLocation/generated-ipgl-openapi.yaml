@@ -21,4 +21,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json: {}
 components: {}
