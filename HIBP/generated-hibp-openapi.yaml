@@ -46,7 +46,6 @@ paths:
             application/json: {}
         default:
           description: Unexpected error
-          content:
-            application/json: {}
+          schema: {}
       summary: Get list of breaches for an account
 components: {}
