@@ -20,7 +20,6 @@ paths:
           name: email
           schema:
             type: string
-          example: philipb@appsol.co.nz
           required: true
         - in: header
           name: hibp-api-key
