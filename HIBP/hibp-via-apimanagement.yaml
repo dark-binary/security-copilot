@@ -3,7 +3,7 @@ info:
   title: HIBP-Collection
   version: 1.0.0
 servers:
-  - url: https://https://d-aue-apimanagement-security-copilot.azure-api.net
+  - url: https://d-aue-apimanagement-security-copilot.azure-api.net
 components:
  securitySchemes:
    hibp-api-key:
