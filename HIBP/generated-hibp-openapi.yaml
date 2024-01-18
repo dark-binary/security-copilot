@@ -16,36 +16,8 @@ paths:
           type: string
         required: true
       responses:
-        '200':
-          description: Successful response
-          content:
-            application/json: {}
-        '400':
-          description: Bad request
-          content:
-            application/json: {}
-        '401':
-          description: Unauthorized
-          content:
-            application/json: {}
-        '403':
-          description: Forbidden
-          content:
-            application/json: {}
-        '404':
-          description: Not found
-          content:
-            application/json: {}
-        '429':
-          description: Too many requests
-          content:
-            application/json: {}
-        '503':
-          description: Service unavailable
-          content:
-            application/json: {}
         default:
-          description: Unexpected error
+          description: default
           schema: {}
       summary: Get list of breaches for an account
 components: {}
