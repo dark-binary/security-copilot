@@ -4,8 +4,6 @@ info:
   version: 1.0.0
 servers:
   - url: https://haveibeenpwned.com/api/v3
-security:
-  - apiKeyAuth: []
 components:
   securitySchemes:
     ApiKeyAuth:

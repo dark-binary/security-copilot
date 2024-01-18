@@ -16,8 +16,15 @@ paths:
           type: string
         required: true
       responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json: {}
         default:
           description: default
-          schema: {}
       summary: Get list of breaches for an account
 components: {}

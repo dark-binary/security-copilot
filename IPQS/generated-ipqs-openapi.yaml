@@ -3,46 +3,46 @@ info:
   title: IPQS-Collection
   version: 1.0.0
 servers:
-- url: https://ipqualityscore.com
+  - url: https://ipqualityscore.com
 paths:
   "/api/json/ip/":
     get:
       tags:
-      - default
+        - default
       summary: IPQS-Request
       parameters:
-      - name: ip
-        in: query
-        schema:
-          type: string
-        required: true
-      - name: strictness
-        in: query
-        schema:
-          type: integer
-        default: '0'
-      - name: allow_public_access_points
-        in: query
-        schema:
-          type: boolean
-        default: 'true'
-      - name: fast
-        in: query
-        schema:
-          type: boolean
-        default: 'true'
-      - name: lighter_penalties
-        in: query
-        schema:
-          type: boolean
-        default: 'true'
-      - name: mobile
-        in: query
-        schema:
-          type: boolean
-        default: 'true'
+        - name: ip
+          in: query
+          schema:
+            type: string
+          required: true
+        - name: strictness
+          in: query
+          schema:
+            type: integer
+            default: "0"
+        - name: allow_public_access_points
+          in: query
+          schema:
+            type: boolean
+            default: "true"
+        - name: fast
+          in: query
+          schema:
+            type: boolean
+            default: "true"
+        - name: lighter_penalties
+          in: query
+          schema:
+            type: boolean
+            default: "true"
+        - name: mobile
+          in: query
+          schema:
+            type: boolean
+            default: "true"
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
