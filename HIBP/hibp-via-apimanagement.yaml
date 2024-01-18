@@ -6,16 +6,16 @@ servers:
   - url: https://d-aue-apimanagement-security-copilot.azure-api.net
 components:
  securitySchemes:
-   hibp-api-key:
-     type: apiKey
-     in: header
-     name: hibp-api-key
+  #  hibp-api-key:
+  #    type: apiKey
+  #    in: header
+  #    name: hibp-api-key
    apiKey:
      type: apiKey
      in: header
      name: apiKey
 security:
-  - hibp-api-key: []
+  # - hibp-api-key: []
   - apiKey: []
 paths:
   /breachedaccount/{email}:
