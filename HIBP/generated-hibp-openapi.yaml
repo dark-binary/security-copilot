@@ -5,7 +5,13 @@ info:
 servers:
 - url: https://haveibeenpwned.com/api/v3
 security:
-  - apiKeyHeader: []
+- apiKeyAuth: []
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: hibp-api-key
 paths:
   /breachedaccount/{email}:
     get:
@@ -20,11 +26,4 @@ paths:
       responses:
         default:
           description: default
-          schema: {}
       summary: Get list of breaches for an account
-  securitySchemes:
-    apiKeyHeader:
-      type: apiKey
-      in: header
-      name: hibp-api-key
-components: {}
