@@ -20,27 +20,27 @@ paths:
           in: query
           schema:
             type: integer
-            default: "0"
+          example: 0
         - name: allow_public_access_points
           in: query
           schema:
             type: boolean
-            default: "true"
+          example: true
         - name: fast
           in: query
           schema:
             type: boolean
-            default: "true"
+          example: true
         - name: lighter_penalties
           in: query
           schema:
             type: boolean
-            default: "true"
+          example: true
         - name: mobile
           in: query
           schema:
             type: boolean
-            default: "true"
+          example: true
       responses:
         "200":
           description: Successful response

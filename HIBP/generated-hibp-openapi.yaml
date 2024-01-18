@@ -4,12 +4,12 @@ info:
   version: 1.0.0
 servers:
   - url: https://haveibeenpwned.com/api/v3
-components:
-  securitySchemes:
-    ApiKeyAuth:
-      type: apiKey
-      in: header
-      name: hibp-api-key
+#components:
+#  securitySchemes:
+#    api_key:
+#      type: apiKey
+#      in: header
+#      name: hibp-api-key
 paths:
   /breachedaccount/{email}:
     get:
@@ -20,10 +20,15 @@ paths:
           name: email
           schema:
             type: string
+          example: philipb@appsol.co.nz
           required: true
+        - in: header
+          name: hibp-api-key
+          schema:
+            type: string
       responses:
         default:
           description: default
-      security:
-        - ApiKeyAuth: []
+ #     security:
+ #       - api_key: []
       summary: Get list of breaches for an account
