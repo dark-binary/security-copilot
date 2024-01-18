@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: HIBP-Collection
+  version: 1.0.0
+servers:
+  - url: https://https://d-aue-apimanagement-security-copilot.azure-api.net
+components:
+ securitySchemes:
+   hibp-api-key:
+     type: apiKey
+     in: header
+     name: hibp-api-key
+   apiKey:
+     type: apiKey
+     in: header
+     name: apiKey
+security:
+  - hibp-api-key: []
+  - apiKey: []
+paths:
+  /breachedaccount/{email}:
+    get:
+      parameters:
+        - in: path
+          name: email
+          schema:
+            type: string
+          required: true
+          example: philipb@appsol.co.nz
+      responses:
+        default:
+          description: default
+      summary: Get list of breaches for an account
