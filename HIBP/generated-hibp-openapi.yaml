@@ -27,7 +27,6 @@ paths:
           schema:
             type: string
             default: Something
-          required: true
       responses:
         default:
           description: default
