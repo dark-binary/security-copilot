@@ -20,5 +20,5 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/8cc8d817837bb81c67eb890b18f9ce8abe53ea89/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
+      OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/4c2f64855b8be1b8ed2a924313c9527b3daf74d3/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
       weatherSettingName: weather
