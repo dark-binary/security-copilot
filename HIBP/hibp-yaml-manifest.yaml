@@ -4,6 +4,14 @@ Descriptor:
   Description: This tool checks if an email address has been found in any of the data breaches in HaveIBeenPwned.
   SupportedAuthTypes:
     - ApiKey
+  Settings:
+    - Name: User-Agent
+      Label: User-Agent
+      Description: User-Agent for connection
+      HintText: "SecurityCopilotHIBP"
+      SettingType: String
+      Default: SecurityCopilot
+      Required: true
   Authorization:
   # - Type: APIKey
   #   Key: hibp-api-key
