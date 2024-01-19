@@ -26,6 +26,6 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/eee4e4dbb0a80263d753fefb3197dfa8b2c59264/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
+      OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/a3830f8db92b6eea5d037aaef3d316745fff2bf1/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
       AllPreviousPromptsFullMessage: allpreviousprompts
       AllCurrentSessionVariables: allcurrentsessionvariables
