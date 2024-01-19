@@ -19,7 +19,7 @@ paths:
         name: User-Agent
         schema:
           type: string
-          default: Something
+          default: Somethingelse
       responses:
         '200':
           description: Successful response
