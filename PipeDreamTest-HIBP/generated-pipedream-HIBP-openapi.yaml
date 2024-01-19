@@ -21,7 +21,12 @@ paths:
       #     type: string
       #     default: Somethingelse
       - in: query
-        name: FivePreviousPromptsFullMessage
+        name: AllPreviousPromptsFullMessage
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: AllCurrentSessionVariables
         schema:
           type: string
         required: true
