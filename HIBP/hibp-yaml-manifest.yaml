@@ -10,7 +10,6 @@ Descriptor:
       Description: User-Agent for connection
       HintText: "SecurityCopilotHIBP"
       SettingType: String
-      Default: SecurityCopilot
       Required: true
   Authorization:
   # - Type: APIKey
