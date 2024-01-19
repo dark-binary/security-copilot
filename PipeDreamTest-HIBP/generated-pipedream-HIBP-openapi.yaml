@@ -15,12 +15,12 @@ paths:
         schema:
           type: string
         required: true
+      # - in: header
+      #   name: User-Agent
+      #   schema:
+      #     type: string
+      #     default: Somethingelse
       - in: header
-        name: User-Agent
-        schema:
-          type: string
-          default: Somethingelse
-      - in: query
         name: useragentparameter
         schema:
           type: string
