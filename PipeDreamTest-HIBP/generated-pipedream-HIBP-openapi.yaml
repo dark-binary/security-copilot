@@ -20,8 +20,8 @@ paths:
       #   schema:
       #     type: string
       #     default: Somethingelse
-      - in: header
-        name: useragentparameter
+      - in: query
+        name: weatherSettingName
         schema:
           type: string
         required: true
