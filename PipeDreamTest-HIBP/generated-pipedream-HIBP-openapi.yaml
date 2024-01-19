@@ -21,7 +21,7 @@ paths:
       #     type: string
       #     default: Somethingelse
       - in: query
-        name: AllPromptsFullMessage
+        name: AllPreviousPromptsFullMessage
         schema:
           type: string
         required: true
