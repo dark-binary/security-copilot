@@ -5,7 +5,7 @@ info:
 servers:
 - url: https://eobo1ufqdmmqq5b.m.pipedream.net/api/v3
 paths:
-  /breachedaccount/{email}?query={something}:
+  /breachedaccount/{email}:
     get:
       tags:
       - default
