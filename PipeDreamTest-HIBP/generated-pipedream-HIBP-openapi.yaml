@@ -5,7 +5,7 @@ info:
 servers:
 - url: https://eobo1ufqdmmqq5b.m.pipedream.net/api/v3
 paths:
-  /breachedaccount/{email}:
+  /breachedaccount/{email}?query={something}:
     get:
       tags:
       - default
@@ -20,6 +20,11 @@ paths:
         schema:
           type: string
           default: Somethingelse
+      - in: query
+        name: something
+        schema:
+          type: string
+        required: true
       responses:
         '200':
           description: Successful response
