@@ -9,7 +9,7 @@ Descriptor:
   #   Key: hibp-api-key
   #   Location: Header
   #   AuthScheme: ''
-  - Type: APIKey
+    Type: APIKey
     Key: apiKey
     Location: Header
     AuthScheme: ''
