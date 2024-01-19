@@ -21,7 +21,7 @@ paths:
       #     type: string
       #     default: Somethingelse
       - in: query
-        name: systemmessageSettingName
+        name: LastPromptFullMessage
         schema:
           type: string
         required: true
