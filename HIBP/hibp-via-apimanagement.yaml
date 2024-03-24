@@ -3,7 +3,7 @@ info:
   title: HIBP-Collection
   version: 1.0.0
 servers:
-  - url: https://d-aue-apimanagement-security-copilot.azure-api.net
+  - url: https://d-aue-security-copilot.azure-api.net/hibp
 # components:
 #  securitySchemes:
 #   #  hibp-api-key:
@@ -28,6 +28,18 @@ paths:
           required: true
           example: philipb@appsol.co.nz
       responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+        '401':
+          description: Unauthorized
+          content:
+            application/json: {}
+        '403':
+          description: Forbidden
+          content:
+            application/json: {}
         default:
           description: default
       summary: Get list of breaches for an account
