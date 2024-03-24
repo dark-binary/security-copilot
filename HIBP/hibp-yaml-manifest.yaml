@@ -5,12 +5,8 @@ Descriptor:
   SupportedAuthTypes:
     - ApiKey
   Authorization:
-  # - Type: APIKey
-  #   Key: hibp-api-key
-  #   Location: Header
-  #   AuthScheme: ''
-    Type: APIKey
-    Key: apiKey
+  - Type: APIKey
+    Key: hibp-api-key
     Location: Header
     AuthScheme: ''
 
