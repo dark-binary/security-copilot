@@ -21,13 +21,40 @@ paths:
           schema:
             type: string
           required: true
-          example: philipb@appsol.co.nz
         - name: User-Agent
           in: header
           schema:
             type: string
             default: Something
       responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+        '400':
+          description: The account does not comply with an acceptable format
+          content:
+            application/json: {}
+        '401':
+          description: API Key is missing or invalid
+          content:
+            application/json: {}
+        '403':
+          description: Unauthorized
+          content:
+            application/json: {}
+        '404':
+          description: User Not Found in any data breaches
+          content:
+            application/json: {}
+        '429':
+          description: Rate limit exceeded
+          content:
+            application/json: {}
+        '503':
+          description: Service unavailable
+          content:
+            application/json: {}
         default:
           description: default
       summary: Get list of breaches for an account
