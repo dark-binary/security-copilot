@@ -36,3 +36,4 @@ SkillGroups:
         - Name: User-Agent
           Description: "Put in the User-Agent of the browser."
           DefaultValue: "Goodbye Debac"
+          Required: true
