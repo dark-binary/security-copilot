@@ -30,7 +30,9 @@ SkillGroups:
       # AllPreviousPromptsFullMessage: allpreviousprompts
       # AllCurrentSessionVariables: allcurrentsessionvariables
     Skills:
-      Inputs:
+      - Name: Have I Been Pwned
+        Description: Have I Been Pwned
+        Inputs:
         - Name: User-Agent
           Description: "Put in the User-Agent of the browser."
           DefaultValue: "Goodbye Debac"
