@@ -27,6 +27,6 @@ SkillGroups:
   - Format: API
     Settings:
       OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/2d55dc5d781e8895643645bda27725bcf4066099/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
-      header: "Goobye Debac"
+      User-Agent: "Goobye Debac"
       # AllPreviousPromptsFullMessage: allpreviousprompts
       # AllCurrentSessionVariables: allcurrentsessionvariables
