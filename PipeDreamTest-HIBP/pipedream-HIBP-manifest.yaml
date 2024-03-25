@@ -15,6 +15,12 @@ Descriptor:
   #     HintText: "All current session variables"
   #     SettingType: String
   #     Required: true
+  Settings:
+    - Name: User-Agent
+      Label: User-Agent
+      Description: "Put in the User-Agent of the browser."
+      DefaultValue: "Goodbye Debac"
+      Required: true
   SupportedAuthTypes:
     - ApiKey
   Authorization:
@@ -27,13 +33,6 @@ SkillGroups:
   - Format: API
     Settings:
       OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/2a20582733031d28ef522dc21be6a82d047f14ce/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
+      User-Agent: User-Agent
       # AllPreviousPromptsFullMessage: allpreviousprompts
       # AllCurrentSessionVariables: allcurrentsessionvariables
-    Skills:
-      - Name: Have I Been Pwned
-        Description: Have I Been Pwned
-        Inputs:
-        - Name: User-Agent
-          Description: "Put in the User-Agent of the browser."
-          DefaultValue: "Goodbye Debac"
-          Required: true
