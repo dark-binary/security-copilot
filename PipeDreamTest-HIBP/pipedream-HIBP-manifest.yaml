@@ -27,6 +27,10 @@ SkillGroups:
   - Format: API
     Settings:
       OpenApiSpecUrl: https://raw.githubusercontent.com/dark-binary/security-copilot/0ea9819770314009beda6f8e2fb490b74f2117fe/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
-      User-Agent: "Goobye Debac"
       # AllPreviousPromptsFullMessage: allpreviousprompts
       # AllCurrentSessionVariables: allcurrentsessionvariables
+    Skills:
+      Inputs:
+      - Name: User-Agent
+        Description: "Put in the User-Agent of the browser."
+        DefaultValue: "Goodbye Debac"
