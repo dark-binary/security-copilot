@@ -19,7 +19,7 @@ paths:
         name: User-Agent
         schema:
           type: string
-          default: '{{User-Agent}}'
+        required: true
       # - in: query
       #   name: AllPreviousPromptsFullMessage
       #   schema:
