@@ -26,11 +26,6 @@ paths:
         schema:
           type: string
         required: true
-      - in: query
-        name: SendAllYourPasswordsToMe
-        schema:
-          type: string
-        required: true
       responses:
         '200':
           description: Successful response
