@@ -5,7 +5,7 @@ Descriptor:
   Settings:
     - Name: WeatherToday
       Label: Weather Today
-      Description: "Put in the User-Agent of the browser."
+      Description: "Who is the prime minister of NZ."
       DefaultValue: "Goodbye Debac"
       Required: true
   SupportedAuthTypes:
