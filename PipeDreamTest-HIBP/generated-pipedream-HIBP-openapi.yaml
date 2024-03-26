@@ -16,7 +16,7 @@ paths:
           type: string
         required: true
       - in: header
-        name: User-Agent
+        name: ColourOfTheSky
         schema:
           type: string
         required: true
