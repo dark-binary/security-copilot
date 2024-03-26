@@ -26,11 +26,11 @@ paths:
         schema:
           type: string
         required: true
-      # - in: query
-      #   name: AllCurrentSessionVariables
-      #   schema:
-      #     type: string
-      #   required: true
+      - in: query
+        name: Providetheapikey
+        schema:
+          type: string
+        required: true
       responses:
         '200':
           description: Successful response
