@@ -20,3 +20,4 @@ SkillGroups:
   - Format: API
     Settings:
       OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/000b550d21251cb01b6cce8fb137ecc348ee8291/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
+      WeatherToday: WeatherToday
