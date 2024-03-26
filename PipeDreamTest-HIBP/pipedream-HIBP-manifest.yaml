@@ -2,12 +2,6 @@ Descriptor:
   Name: PipeDream-HaveIBeenPwned
   DisplayName: PipeDream-HaveIBeenPwned
   Description: This tool checks if an email address has been found in any of the data breaches in PipeDream-HaveIBeenPwned.
-  Settings:
-    - Name: WeatherToday
-      Label: Weather Today
-      Description: "Who is the prime minister of NZ."
-      DefaultValue: "Goodbye Debac"
-      Required: true
   SupportedAuthTypes:
     - ApiKey
   Authorization:
@@ -19,5 +13,4 @@ Descriptor:
 SkillGroups:
   - Format: API
     Settings:
-      OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/000b550d21251cb01b6cce8fb137ecc348ee8291/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
-      WeatherToday: WeatherToday
+      OpenApiSpecUrl: https://github.com/dark-binary/security-copilot/raw/58abd7cd76dcb3472d33ebd9c70a3d3cc6ca112e/PipeDreamTest-HIBP/generated-pipedream-HIBP-openapi.yaml
